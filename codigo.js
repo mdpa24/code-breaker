@@ -146,7 +146,7 @@ switch(guiones) {
         break;
         case 3: console.log(numero1+numero2+numero3+numero4+" ***-");
         break;
-        
+    }
     break;
 
     case 2:
