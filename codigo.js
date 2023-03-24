@@ -32,7 +32,7 @@ arr[0] = getRandomIntInclusive(1,9);
 
 
 
-// console.log(arr);  Descomenta esta linea si quieres ver el numero a adivinar
+console.log(arr);  //Descomenta esta linea si quieres ver el numero a adivinar
 
 
 
@@ -147,9 +147,23 @@ if(n2==n3 && n3 == n4 && n4 == arr[0])
     }
 
 }
+if(n1==n2 && n2 == n3 && n3 == arr[3])
+{
+
+
+    guiones = 1;
+    if(n4 == arr[0]||n4== arr[1]||n4 == arr[2]){
+
+        guiones = guiones+1;
+    }
+ 
+
+}
 
 
 
+
+console.log(n1+n2+n3+arr[3])
 
 switch(guiones) {
    
