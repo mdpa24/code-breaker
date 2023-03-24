@@ -32,7 +32,7 @@ arr[0] = getRandomIntInclusive(1,9);
 
 
 
-//console.log(arr); Descomenta esta linea si quieres ver el numero a adivinar
+// console.log(arr); Descomenta esta linea si quieres ver el numero a adivinar
 
 
 
