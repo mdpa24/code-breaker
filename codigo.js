@@ -32,7 +32,7 @@ arr[0] = getRandomIntInclusive(1,9);
 
 
 
-/* console.log(arr);  Descomenta está linea si quieres ver el número a adivinar */
+console.log(arr); 
 
 
 
@@ -129,6 +129,24 @@ if(d==1){ n=0; o=0; p=0;}
 
 
 guiones = e+f+g+h+i+j+k+l+m+n+o+p;
+
+if(n2==n3 && n3 == n4 )
+{
+    
+    guiones=1;
+    if(asteriscos>0)
+    {
+        guiones = 0;
+
+    }
+    if(arr[0]==arr[2])
+    {
+
+        guiones = 0;
+
+    }
+
+}
 
 
 
