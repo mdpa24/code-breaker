@@ -59,6 +59,8 @@ let num2=parseInt(numero2)
 let num3=parseInt(numero3)
 let num4=parseInt(numero4)
 
+
+
 let nu1 = arr[0]
 let nu2 = arr[1]
 let nu3 = arr[2]
@@ -66,6 +68,7 @@ let nu4 = arr[3]
 let asteriscos=0;
 let guiones=0;
  
+
 if( num1 == nu1 || num2 == nu2 || num3 == nu3 || num4 == nu4 ) { asteriscos=1 }
 
 
@@ -86,10 +89,11 @@ if(num1 == nu1 && num2 == nu2 && num3 == nu3 && num4 == nu4 ) { asteriscos=4 }
 
 
 
-if((num1 == nu2 || num1 == nu3 || num1 == nu4) && (num1!=nu1 && num2!=nu2 && num3 != nu3 && num4 != nu4)) { guiones=1;}
-if((num2 == nu1 || num2 == nu3 || num2 == nu4) && (num1!=nu1 && num2!=nu2 && num3 != nu3 && num4 != nu4)) { guiones=1;}
-if((num3 == nu1 || num3 == nu2 || num3 == nu4) && (num1!=nu1 && num2!=nu2 && num3 != nu3 && num4 != nu4)) { guiones=1;}
-if((num4 == nu1 || num4 == nu2 || num4 == nu3) && (num1!=nu1 && num2!=nu2 && num3 != nu3 && num4 != nu4)) { guiones=1;}
+if(num1 == nu2 || num1 == nu3 || num1 == nu4) { guiones=1}
+if(num2 == nu1 || num2 == nu3 || num2 == nu4) { guiones=1}
+if(num3 == nu1 || num3 == nu2 || num3 == nu4) { guiones=1}
+if(num4 == nu1 || num4 == nu2 || num4 == nu3) { guiones=1}
+
 
 
 if(num1 == nu2 && num1 == nu3 ) { guiones=1 ; }
@@ -115,6 +119,7 @@ if((num1==nu2 && num4==nu3) && (num1!=nu1 && num2!=nu2 && num3 != nu3 && num4 !=
 if((num2==nu1 && num3==nu4) && (num1!=nu1 && num2!=nu2 && num3 != nu3 && num4 != nu4)) { guiones=2 ; }
 if((num1==nu2 && num3==nu4) && (num1!=nu1 && num2!=nu2 && num3 != nu3 && num4 != nu4)) { guiones=2 ; }
 if((num2==nu1 && num4==nu3) && (num1!=nu1 && num2!=nu2 && num3 != nu3 && num4 != nu4)) { guiones=2 ; }
+
 
 
 if(num1==nu2 && num2==nu1) { guiones=2 ; }
