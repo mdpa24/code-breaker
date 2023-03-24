@@ -130,10 +130,10 @@ if(d==1){ n=0; o=0; p=0;}
 
 guiones = e+f+g+h+i+j+k+l+m+n+o+p;
 
-if(n2==n3 && n3 == n4 )
+if(n2==n3 && n3 == n4 && n4 == arr[0])
 {
     
-    guiones=1;
+    asteriscos=1;
     if(asteriscos>0)
     {
         guiones = 0;
