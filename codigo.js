@@ -86,58 +86,55 @@ if(num1 == nu1 && num2 == nu2 && num3 == nu3 && num4 == nu4 ) { asteriscos=4 }
 
 
 
-if((num1 == nu2 || num1 == nu3 || num1 == nu4) && (num1!=nu1 && num2!=nu2 && num3 != nu3 && num4 != nu4)) { guiones=1; console.log("a")}
-if((num2 == nu1 || num2 == nu3 || num2 == nu4) && (num1!=nu1 && num2!=nu2 && num3 != nu3 && num4 != nu4)) { guiones=1; console.log("a}b")}
-if((num3 == nu1 || num3 == nu2 || num3 == nu4) && (num1!=nu1 && num2!=nu2 && num3 != nu3 && num4 != nu4)) { guiones=1; console.log("c")}
-if((num4 == nu1 || num4 == nu2 || num4 == nu3) && (num1!=nu1 && num2!=nu2 && num3 != nu3 && num4 != nu4)) { guiones=1; console.log("d") }
+if((num1 == nu2 || num1 == nu3 || num1 == nu4) && (num1!=nu1 && num2!=nu2 && num3 != nu3 && num4 != nu4)) { guiones=1;}
+if((num2 == nu1 || num2 == nu3 || num2 == nu4) && (num1!=nu1 && num2!=nu2 && num3 != nu3 && num4 != nu4)) { guiones=1;}
+if((num3 == nu1 || num3 == nu2 || num3 == nu4) && (num1!=nu1 && num2!=nu2 && num3 != nu3 && num4 != nu4)) { guiones=1;}
+if((num4 == nu1 || num4 == nu2 || num4 == nu3) && (num1!=nu1 && num2!=nu2 && num3 != nu3 && num4 != nu4)) { guiones=1;}
 
 
-if(num1 == nu2 && num1 == nu3 ) { guiones=1 ; console.log("e")}
-if(num1 == nu2 && num1 == nu4 ) { guiones=1 ; console.log("f") }
-if(num1 == nu3 && num1 == nu4 ) { guiones=1 ; console.log("g")}
+if(num1 == nu2 && num1 == nu3 ) { guiones=1 ; }
+if(num1 == nu2 && num1 == nu4 ) { guiones=1 ; }
+if(num1 == nu3 && num1 == nu4 ) { guiones=1 ; }
 
-if(num2 == nu1 && num2 == nu3 ) { guiones=1 ; console.log("h")}
-if(num2 == nu1 && num2 == nu4 ) { guiones=1 ; console.log("a}i")}
-if(num2 == nu3 && num2 == nu4 ) { guiones=1 ; console.log("j")}
+if(num2 == nu1 && num2 == nu3 ) { guiones=1 ; }
+if(num2 == nu1 && num2 == nu4 ) { guiones=1 ; }
+if(num2 == nu3 && num2 == nu4 ) { guiones=1 ; }
 
-if(num3 == nu1 && num3 == nu2 ) { guiones=1 ; console.log("a}k")}
-if(num3 == nu1 && num3 == nu4 ) { guiones=1 ; console.log("l")}
-if(num3 == nu2 && num3 == nu4 ) { guiones=1 ; console.log("m")}
+if(num3 == nu1 && num3 == nu2 ) { guiones=1 ; }
+if(num3 == nu1 && num3 == nu4 ) { guiones=1 ; }
+if(num3 == nu2 && num3 == nu4 ) { guiones=1 ; }
 
-if(num4 == nu1 && num4 == nu2 ) { guiones=1 ; console.log("n")}
-if(num4 == nu1 && num4 == nu3 ) { guiones=1 ; console.log("ñ")}
-if(num4 == nu2 && num4 == nu3 ) { guiones=1 ; console.log("o")}
-
-
-if((num1==nu3 && num2==nu4) && (num1!=nu1 && num2!=nu2 && num3 != nu3 && num4 != nu4)) { guiones=2 ; console.log("p") }
-if((num3==nu1 && num4==nu2) && (num1!=nu1 && num2!=nu2 && num3 != nu3 && num4 != nu4)) { guiones=2 ; console.log("q")}
-if((num1==nu2 && num4==nu3) && (num1!=nu1 && num2!=nu2 && num3 != nu3 && num4 != nu4)) { guiones=2 ; console.log("r")}
-if((num2==nu1 && num3==nu4) && (num1!=nu1 && num2!=nu2 && num3 != nu3 && num4 != nu4)) { guiones=2 ; console.log("s")}
-if((num1==nu2 && num3==nu4) && (num1!=nu1 && num2!=nu2 && num3 != nu3 && num4 != nu4)) { guiones=2 ; console.log("t")}
-if((num2==nu1 && num4==nu3) && (num1!=nu1 && num2!=nu2 && num3 != nu3 && num4 != nu4)) { guiones=2 ; console.log("w")}
+if(num4 == nu1 && num4 == nu2 ) { guiones=1 ; }
+if(num4 == nu1 && num4 == nu3 ) { guiones=1 ; }
+if(num4 == nu2 && num4 == nu3 ) { guiones=1 ; }
 
 
-if(num1==nu2 && num2==nu1) { guiones=2 ; console.log("v")}
-if((num1 == nu3 || num2 == nu3) && (num3 == nu2 || num4 == nu3)) { guiones=2 ; console.log("vw")}
-
-if(num1==nu1 && num2==nu3 && num3==nu4 && (num1!=nu1 && num2!=nu2 && num3 != nu3 && num4 != nu4)) { guiones=3 ; console.log("x")}
-if(num2==nu1 && num3==nu2 && num4==nu3 && (num1!=nu1 && num2!=nu2 && num3 != nu3 && num4 != nu4)) { guiones=3 ; console.log("y")}
-if(num1==nu2 && num3==nu1 && num4==nu3 && (num1!=nu1 && num2!=nu2 && num3 != nu3 && num4 != nu4)) { guiones=3 ; console.log("x")}
-if(num1==nu2 && num3==nu1 && num4==nu3 && (num1!=nu1 && num2!=nu2 && num3 != nu3 && num4 != nu4)) { guiones=3 ; console.log("as")}
-if(num1==nu2 && num2==nu1 && num4==nu3 && (num1!=nu1 && num2!=nu2 && num3 != nu3 && num4 != nu4)) { guiones=3 ; console.log("ad")}
+if((num1==nu3 && num2==nu4) && (num1!=nu1 && num2!=nu2 && num3 != nu3 && num4 != nu4)) { guiones=2 ; }
+if((num3==nu1 && num4==nu2) && (num1!=nu1 && num2!=nu2 && num3 != nu3 && num4 != nu4)) { guiones=2 ; }
+if((num1==nu2 && num4==nu3) && (num1!=nu1 && num2!=nu2 && num3 != nu3 && num4 != nu4)) { guiones=2 ; }
+if((num2==nu1 && num3==nu4) && (num1!=nu1 && num2!=nu2 && num3 != nu3 && num4 != nu4)) { guiones=2 ; }
+if((num1==nu2 && num3==nu4) && (num1!=nu1 && num2!=nu2 && num3 != nu3 && num4 != nu4)) { guiones=2 ; }
+if((num2==nu1 && num4==nu3) && (num1!=nu1 && num2!=nu2 && num3 != nu3 && num4 != nu4)) { guiones=2 ; }
 
 
-if(num1==nu4 && num2==nu3 && num3==nu2 && num4 == nu1) { guiones=4 ; console.log("acc")}
-if(num1==nu2 && num2==nu1 && num3==nu4 && num4 == nu3) { guiones=4 ; console.log("acdc")}
-if(num1==nu3 && num2==nu4 && num3==nu1 && num4 == nu2) { guiones=4 ; console.log("acsc")}
-if(num1==nu2 && num2==nu3 && num3==nu4 && num4 == nu1) { guiones=4 ; console.log("agh")}
+if(num1==nu2 && num2==nu1) { guiones=2 ; }
+if((num1 == nu3 || num2 == nu3) && (num3 == nu2 || num4 == nu3)) { guiones=2 ;}
+
+if(num1==nu1 && num2==nu3 && num3==nu4 && (num1!=nu1 && num2!=nu2 && num3 != nu3 && num4 != nu4)) { guiones=3 ; }
+if(num2==nu1 && num3==nu2 && num4==nu3 && (num1!=nu1 && num2!=nu2 && num3 != nu3 && num4 != nu4)) { guiones=3 ; }
+if(num1==nu2 && num3==nu1 && num4==nu3 && (num1!=nu1 && num2!=nu2 && num3 != nu3 && num4 != nu4)) { guiones=3 ; }
+if(num1==nu2 && num3==nu1 && num4==nu3 && (num1!=nu1 && num2!=nu2 && num3 != nu3 && num4 != nu4)) { guiones=3 ; }
+if(num1==nu2 && num2==nu1 && num4==nu3 && (num1!=nu1 && num2!=nu2 && num3 != nu3 && num4 != nu4)) { guiones=3 ; }
 
 
+if(num1==nu4 && num2==nu3 && num3==nu2 && num4 == nu1) { guiones=4 ; }
+if(num1==nu2 && num2==nu1 && num3==nu4 && num4 == nu3) { guiones=4 ; }
+if(num1==nu3 && num2==nu4 && num3==nu1 && num4 == nu2) { guiones=4 ; }
+if(num1==nu2 && num2==nu3 && num3==nu4 && num4 == nu1) { guiones=4 ; }
 
 
 
-// console.log("asteriscos: "+asteriscos)
-// console.log("guiones: "+guiones)
+
 
 
 switch(asteriscos) {
