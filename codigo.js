@@ -59,6 +59,9 @@ let n2=parseInt(numero2)
 let n3=parseInt(numero3)
 let n4=parseInt(numero4)
 
+ 
+ 
+
 let a=0,b=0,c=0,d=0,e=0,f=0,g=0,h=0,i=0,j=0,k=0,l=0,m=0,n=0,o=0,p=0;
 let asteriscos,guiones;
 
@@ -129,6 +132,7 @@ guiones = e+f+g+h+i+j+k+l+m+n+o+p;
 
 
 
+
 switch(guiones) {
    
     case 1: 
@@ -190,6 +194,12 @@ switch(guiones) {
 
         
 }
+
+if(numero1 == "" || numero2 == "" || numero3=="" || numero4 == "" ){   
+    console.clear("")
+    console.log("Ingresa los 4 dígitos")
+
+}   
 
 
 
