@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+      input{
+        width: 30px;
+      }
+      #display-numero{
+        border: 1px solid gray; width: 20px; height: 20px; text-align: center;
+        float: left;
+      }
+      #reload
+      {
+        margin-left: 20px;
+
+      }
+
+    </style>
+
+</head>
+<body>
+
+    <p>Juego de adivinar un número aleatorio de 4 digitos</p>
+    <div id="display-numero">?</div>
+    
+    <button id="reload">Click para adivinar numero diferente</button>
+
+    <div class="clearfix"></div>
+    <br/><br/><br/><br/>
+
+    <form id="formulario">
+
+    <input type="number" name="" id="numero1" min="0" max="9">
+    <input type="number" name="" id="numero2" min="0" max="9">
+    <input type="number" name="" id="numero3" min="0" max="9">
+    <input type="number" name="" id="numero4" min="0" max="9">
+    
+
+    </form>
+
+    <br/>
+
+    <button onclick="playGame()">Jugar</button>
+    <button onclick="limpiarFormulario()">Limpiar</button>
+   
+<script src="codigo.js" charset="utf-8"></script>
+</body>
+</html>
