@@ -163,8 +163,6 @@ if(n1==n2 && n2 == n3 && n3 == arr[3])
 
 
 
-console.log(n1+n2+n3+arr[3])
-
 switch(guiones) {
    
     case 1: 
