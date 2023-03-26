@@ -49,19 +49,26 @@ reload.addEventListener('click', _ => {
 });
 
 var playGame = function(){ 
-let numero1 = document.getElementById('numero1').value;
-let numero2 = document.getElementById('numero2').value;
-let numero3 = document.getElementById('numero3').value;
-let numero4 = document.getElementById('numero4').value;
+
+let numerox = document.getElementById('numerox').value;
+
+let myFunc = num => Number(num);
+    
+var intArr = Array.from(String(numerox), myFunc);
+    
+
+    
+
+
 
 let num1,num2,num3,num4;
 let ale1,ale2,ale3,ale4;
 
 
-num1 = parseInt(numero1)
-num2 = parseInt(numero2)
-num3 = parseInt(numero3)
-num4 = parseInt(numero4)
+num1 = intArr[0]
+num2 = intArr[1]
+num3 = intArr[2]
+num4 = intArr[3]
 
 
 
@@ -85,7 +92,11 @@ let a,b,c,d,e,f,g,h;
 // console.log(arr);
 
 
-
+   
+    
+  
+    
+   
 
 if(num1==ale1){ asteriscos = asteriscos+ 1; a=num1; e=1}  
 if(num2==ale2){ asteriscos = asteriscos+ 1; b=num2; f=1}  
@@ -139,51 +150,51 @@ switch(asteriscos) {
     case 1: 
     switch(guiones) {
 
-        case 0: console.log(numero1+numero2+numero3+numero4+" *");
+        case 0: console.log(numerox+" *");
         break;
-        case 1: console.log(numero1+numero2+numero3+numero4+" *-");
+        case 1: console.log(numerox+" *-");
         break;
-        case 2: console.log(numero1+numero2+numero3+numero4+" *--");
+        case 2: console.log(numerox+" *--");
         break;
-        case 3: console.log(numero1+numero2+numero3+numero4+" *---");
+        case 3: console.log(numerox+" *---");
         break;
     }
     break;
     case 2: 
     switch(guiones) {
 
-        case 0: console.log(numero1+numero2+numero3+numero4+" **");
+        case 0: console.log(numerox+" **");
         break; 
-        case 1: console.log(numero1+numero2+numero3+numero4+" **-");
+        case 1: console.log(numerox+" **-");
         break;
-        case 2: console.log(numero1+numero2+numero3+numero4+" **--");
+        case 2: console.log(numerox+" **--");
         break;
     }
     break;
     case 3: 
     switch(guiones) {
 
-        case 0: console.log(numero1+numero2+numero3+numero4+" ***");
+        case 0: console.log(numerox+" ***");
         break; 
-        case 1: console.log(numero1+numero2+numero3+numero4+" ***-");
+        case 1: console.log(numerox+" ***-");
         break;
     
     }
     break;
-    case 4: console.log(numero1+numero2+numero3+numero4+" **** Felicidades!! Adivinaste el número!! ");
+    case 4: console.log(numerox+" **** Felicidades!! Adivinaste el número!! ");
     break;
     case 0:
         switch(guiones) {
 
-            case 1: console.log(numero1+numero2+numero3+numero4+" -");
+            case 1: console.log(numerox+" -");
             break;
-            case 2: console.log(numero1+numero2+numero3+numero4+" --");
+            case 2: console.log(numerox+" --");
             break;
-            case 3: console.log(numero1+numero2+numero3+numero4+" ---");
+            case 3: console.log(numerox+" ---");
             break;
-            case 4: console.log(numero1+numero2+numero3+numero4+" -----");
+            case 4: console.log(numerox+" -----");
             break;
-            case 0: console.log(numero1+numero2+numero3+numero4);
+            case 0: console.log(numerox);
             break;
         }
 
@@ -191,12 +202,12 @@ switch(asteriscos) {
 }
 
 
-if(numero1 == "" || numero2 == "" || numero3=="" || numero4 == "" ){   
-console.clear("")
-console.log("Ingresa los 4 dígitos")
+// if(numero1 == "" || numero2 == "" || numero3=="" || numero4 == "" ){   
+// console.clear("")
+// console.log("Ingresa los 4 dígitos")
 
 }   
 
 
 
-}
+
