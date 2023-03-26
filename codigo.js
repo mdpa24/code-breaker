@@ -64,6 +64,8 @@ num3 = parseInt(numero3)
 num4 = parseInt(numero4)
 
 
+
+
 ale1 = arr[0]
 ale2 = arr[1]
 ale3 = arr[2]
@@ -80,10 +82,12 @@ let a,b,c,d,e,f,g,h;
 
 
 
+
 if(num1==ale1){ asteriscos = asteriscos+ 1; a=num1; e=1}  
 if(num2==ale2){ asteriscos = asteriscos+ 1; b=num2; f=1}  
 if(num3==ale3){ asteriscos = asteriscos+ 1; c=num3; g=1}   
 if(num4==ale4){ asteriscos = asteriscos+ 1; d=num4; h=1}  
+
 
 
 if((num1==ale2||num1==ale3||num1==ale4) && (a!=num1)&&(b!=num1)&&(c!=num1)&&(d!=num1)){guiones=guiones+1;}
@@ -115,6 +119,7 @@ if ((num4==num2&&num2==num3) && (num4==ale1||num4==ale2||num4==ale3||num4==ale4)
 
 
 if(num1==num2&&num2==num3&&num3==num4){guiones=0}
+
 
 
 
