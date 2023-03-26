@@ -54,154 +54,146 @@ let numero2 = document.getElementById('numero2').value;
 let numero3 = document.getElementById('numero3').value;
 let numero4 = document.getElementById('numero4').value;
 
-let num1=parseInt(numero1)
-let num2=parseInt(numero2)
-let num3=parseInt(numero3)
-let num4=parseInt(numero4)
+let num1,num2,num3,num4;
+let ale1,ale2,ale3,ale4;
+
+
+num1 = parseInt(numero1)
+num2 = parseInt(numero2)
+num3 = parseInt(numero3)
+num4 = parseInt(numero4)
 
 
 
-let nu1 = arr[0]
-let nu2 = arr[1]
-let nu3 = arr[2]
-let nu4 = arr[3]
-let asteriscos=0;
-let guiones=0;
- 
+// arr[0] = 4
+// arr[1] = 4
+// arr[2] = 9
+// arr[3] = 0
 
-if( num1 == nu1 || num2 == nu2 || num3 == nu3 || num4 == nu4 ) { asteriscos=1 }
-
-
-if(num1 == nu1 && num2 == nu2) { asteriscos=2 }
-if(num1 == nu1 && num4 == nu4) { asteriscos=2 }
-if(num2 == nu2 && num3 == nu3) { asteriscos=2 }
-if(num1 == nu1 && num3 == nu3) { asteriscos=2 }
-if(num3 == nu3 && num4 == nu4) { asteriscos=2 }
+ale1 = arr[0]
+ale2 = arr[1]
+ale3 = arr[2]
+ale4 = arr[3]
 
 
-if(num1 == nu1 && num2 == nu2 && num3 == nu3 && num1!=num2!=num3 ) { asteriscos=3 }
-if(num1 == nu1 && num2 == nu2 && num4 == nu4 && num1!=num2!=num3 ) { asteriscos=3 }
-if(num4 == nu4 && num3 == nu3 && num1 == nu1 && num1!=num2!=num3 ) { asteriscos=3 }
+let asteriscos = 0
+let guiones = 0
+
+let a,b,c,d,e,f,g,h;
 
 
-if(num1 == nu1 && num2 == nu2 && num3 == nu3 && num4 == nu4 ) { asteriscos=4 }
+// console.log(arr);
 
 
 
 
-if(num1 == nu2 || num1 == nu3 || num1 == nu4) { guiones=1}
-if(num2 == nu1 || num2 == nu3 || num2 == nu4) { guiones=1}
-if(num3 == nu1 || num3 == nu2 || num3 == nu4) { guiones=1}
-if(num4 == nu1 || num4 == nu2 || num4 == nu3) { guiones=1}
+if(num1==ale1){ asteriscos = asteriscos+ 1; a=num1; e=1}  
+if(num2==ale2){ asteriscos = asteriscos+ 1; b=num2; f=1}  
+if(num3==ale3){ asteriscos = asteriscos+ 1; c=num3; g=1}   
+if(num4==ale4){ asteriscos = asteriscos+ 1; d=num4; h=1}  
+
+// console.log(a)
+// console.log(num1)
+
+if((num1==ale2||num1==ale3||num1==ale4) && (a!=num1)&&(b!=num1)&&(c!=num1)&&(d!=num1)){guiones=guiones+1;}
+if((num2==ale1||num2==ale3||num2==ale4) && (a!=num2)&&(b!=num2)&&(c!=num2)&&(d!=num2)){guiones=guiones+1;}
+if((num3==ale1||num3==ale2||num3==ale4) && (a!=num3)&&(b!=num3)&&(c!=num3)&&(d!=num3)){guiones=guiones+1;}
+if((num4==ale1||num4==ale2||num4==ale3) && (a!=num4)&&(b!=num4)&&(c!=num4)&&(d!=num4)){guiones=guiones+1;}
+
+
+// (e!=1)
+// console.log(guiones)
+
+if((num1==num2) && (num1 !=num3) && (num1 != num4) && (num1==ale1||num1==ale2||num1==ale3||num1==ale4) && (guiones>1) && (e!=1) && (f!=1)){guiones=guiones-1};
+
+if((num1==num3) && (num1 !=num2) && (num1 != num4)&& (num1==ale1||num1==ale2||num1==ale3||num1==ale4) && (guiones>1) && (e!=1) && (g!=1)){guiones=guiones-1};
+
+if ((num1==num4) && (num1 !=num2) && (num1 != num3)&& (num1==ale1||num1==ale2||num1==ale3||num1==ale4) && (guiones>1) && (e!=1) && (h!=1) ){guiones=guiones-1}; 
+
+if ((num2==num3) && (num2 !=num1) && (num2 != num4)&& (num2==ale1||num2==ale2||num2==ale3||num2==ale4) && (guiones>1) && (f!=1) && (g!=1)){guiones=guiones-1};
+
+if ((num2==num4) && (num2 !=num1) && (num2 != num3)&& (num2==ale1||num2==ale2||num2==ale3||num2==ale4) && (guiones>1) && (f!=1) && (h!=1)){guiones=guiones-1};
+
+if ((num3==num4) && (num3 !=num1) && (num3 != num2)&& (num3==ale1||num3==ale2||num3==ale3||num3==ale4) && (guiones>1) && (g!=1) && (h!=1)){guiones=guiones-1};
+// console.log(guiones)
+
+if((num1==num2&&num2==num3) && (num1==ale1||num1==ale2||num1==ale3||num1==ale4) && (guiones>1)){guiones=guiones-2};
+if ((num1==num2&&num2==num4) && (num1==ale1||num1==ale2||num1==ale3||num1==ale4) && (guiones>1)){guiones=guiones-2};
+if ((num1==num4&&num4==num3)  && (num1==ale1||num1==ale2||num1==ale3||num1==ale4) && (guiones>1)){guiones=guiones-2};
+if ((num4==num2&&num2==num3) && (num4==ale1||num4==ale2||num4==ale3||num4==ale4) && (guiones>1)){guiones=guiones-2};
 
 
 
-if(num1 == nu2 && num1 == nu3 ) { guiones=1 ; }
-if(num1 == nu2 && num1 == nu4 ) { guiones=1 ; }
-if(num1 == nu3 && num1 == nu4 ) { guiones=1 ; }
-
-if(num2 == nu1 && num2 == nu3 ) { guiones=1 ; }
-if(num2 == nu1 && num2 == nu4 ) { guiones=1 ; }
-if(num2 == nu3 && num2 == nu4 ) { guiones=1 ; }
-
-if(num3 == nu1 && num3 == nu2 ) { guiones=1 ; }
-if(num3 == nu1 && num3 == nu4 ) { guiones=1 ; }
-if(num3 == nu2 && num3 == nu4 ) { guiones=1 ; }
-
-if(num4 == nu1 && num4 == nu2 ) { guiones=1 ; }
-if(num4 == nu1 && num4 == nu3 ) { guiones=1 ; }
-if(num4 == nu2 && num4 == nu3 ) { guiones=1 ; }
-
-
-if((num1==nu3 && num2==nu4) && (num1!=nu1 && num2!=nu2 && num3 != nu3 && num4 != nu4)) { guiones=2 ; }
-if((num3==nu1 && num4==nu2) && (num1!=nu1 && num2!=nu2 && num3 != nu3 && num4 != nu4)) { guiones=2 ; }
-if((num1==nu2 && num4==nu3) && (num1!=nu1 && num2!=nu2 && num3 != nu3 && num4 != nu4)) { guiones=2 ; }
-if((num2==nu1 && num3==nu4) && (num1!=nu1 && num2!=nu2 && num3 != nu3 && num4 != nu4)) { guiones=2 ; }
-if((num1==nu2 && num3==nu4) && (num1!=nu1 && num2!=nu2 && num3 != nu3 && num4 != nu4)) { guiones=2 ; }
-if((num2==nu1 && num4==nu3) && (num1!=nu1 && num2!=nu2 && num3 != nu3 && num4 != nu4)) { guiones=2 ; }
+if(num1==num2&&num2==num3&&num3==num4){guiones=0}
 
 
 
-if(num1==nu2 && num2==nu1) { guiones=2 ; }
-if((num1 == nu3 || num2 == nu3) && (num3 == nu2 || num4 == nu3)) { guiones=2 ;}
 
-if(num1==nu1 && num2==nu3 && num3==nu4 && (num1!=nu1 && num2!=nu2 && num3 != nu3 && num4 != nu4)) { guiones=3 ; }
-if(num2==nu1 && num3==nu2 && num4==nu3 && (num1!=nu1 && num2!=nu2 && num3 != nu3 && num4 != nu4)) { guiones=3 ; }
-if(num1==nu2 && num3==nu1 && num4==nu3 && (num1!=nu1 && num2!=nu2 && num3 != nu3 && num4 != nu4)) { guiones=3 ; }
-if(num1==nu2 && num3==nu1 && num4==nu3 && (num1!=nu1 && num2!=nu2 && num3 != nu3 && num4 != nu4)) { guiones=3 ; }
-if(num1==nu2 && num2==nu1 && num4==nu3 && (num1!=nu1 && num2!=nu2 && num3 != nu3 && num4 != nu4)) { guiones=3 ; }
-
-
-if(num1==nu4 && num2==nu3 && num3==nu2 && num4 == nu1) { guiones=4 ; }
-if(num1==nu2 && num2==nu1 && num3==nu4 && num4 == nu3) { guiones=4 ; }
-if(num1==nu3 && num2==nu4 && num3==nu1 && num4 == nu2) { guiones=4 ; }
-if(num1==nu2 && num2==nu3 && num3==nu4 && num4 == nu1) { guiones=4 ; }
-
-
+// console.log(guiones)
 
 
 
 
 switch(asteriscos) {
    
-            case 1: 
-            switch(guiones) {
+    case 1: 
+    switch(guiones) {
 
-                case 0: console.log(numero1+numero2+numero3+numero4+" *");
-                break;
-                case 1: console.log(numero1+numero2+numero3+numero4+" *-");
-                break;
-                case 2: console.log(numero1+numero2+numero3+numero4+" *--");
-                break;
-                case 3: console.log(numero1+numero2+numero3+numero4+" *---");
-                break;
-            }
-            break;
-            case 2: 
-            switch(guiones) {
+        case 0: console.log(numero1+numero2+numero3+numero4+" *");
+        break;
+        case 1: console.log(numero1+numero2+numero3+numero4+" *-");
+        break;
+        case 2: console.log(numero1+numero2+numero3+numero4+" *--");
+        break;
+        case 3: console.log(numero1+numero2+numero3+numero4+" *---");
+        break;
+    }
+    break;
+    case 2: 
+    switch(guiones) {
 
-                case 0: console.log(numero1+numero2+numero3+numero4+" **");
-                break; 
-                case 1: console.log(numero1+numero2+numero3+numero4+" **-");
-                break;
-                case 2: console.log(numero1+numero2+numero3+numero4+" **--");
-                break;
-            }
-            break;
-            case 3: 
-            switch(guiones) {
+        case 0: console.log(numero1+numero2+numero3+numero4+" **");
+        break; 
+        case 1: console.log(numero1+numero2+numero3+numero4+" **-");
+        break;
+        case 2: console.log(numero1+numero2+numero3+numero4+" **--");
+        break;
+    }
+    break;
+    case 3: 
+    switch(guiones) {
 
-                case 0: console.log(numero1+numero2+numero3+numero4+" ***");
-                break; 
-                case 1: console.log(numero1+numero2+numero3+numero4+" ***-");
-                break;
-            
-            }
-            break;
-            case 4: console.log(numero1+numero2+numero3+numero4+" **** Felicidades!! Adivinaste el número!! ");
-            break;
-            case 0:
-                switch(guiones) {
+        case 0: console.log(numero1+numero2+numero3+numero4+" ***");
+        break; 
+        case 1: console.log(numero1+numero2+numero3+numero4+" ***-");
+        break;
+    
+    }
+    break;
+    case 4: console.log(numero1+numero2+numero3+numero4+" **** Felicidades!! Adivinaste el número!! ");
+    break;
+    case 0:
+        switch(guiones) {
 
-                    case 1: console.log(numero1+numero2+numero3+numero4+" -");
-                    break;
-                    case 2: console.log(numero1+numero2+numero3+numero4+" --");
-                    break;
-                    case 3: console.log(numero1+numero2+numero3+numero4+" ---");
-                    break;
-                    case 4: console.log(numero1+numero2+numero3+numero4+" -----");
-                    break;
-                    case 0: console.log(numero1+numero2+numero3+numero4);
-                    break;
-                }
+            case 1: console.log(numero1+numero2+numero3+numero4+" -");
+            break;
+            case 2: console.log(numero1+numero2+numero3+numero4+" --");
+            break;
+            case 3: console.log(numero1+numero2+numero3+numero4+" ---");
+            break;
+            case 4: console.log(numero1+numero2+numero3+numero4+" -----");
+            break;
+            case 0: console.log(numero1+numero2+numero3+numero4);
+            break;
+        }
 
 
 }
 
 
 if(numero1 == "" || numero2 == "" || numero3=="" || numero4 == "" ){   
-    console.clear("")
-    console.log("Ingresa los 4 dígitos")
+console.clear("")
+console.log("Ingresa los 4 dígitos")
 
 }   
 
