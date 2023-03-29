@@ -18,13 +18,15 @@ p{
 
 input{
 
-  width: 300px;
+  width: 50px;
 }
 
 
 button{
 
   cursor: pointer;
+  color: white;
+  background-color: black;
 }
 
 
