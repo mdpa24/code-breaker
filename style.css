@@ -1,0 +1,24 @@
+input{
+    width: 30px;
+  }
+  #display-numero{
+    border: 1px solid gray; width: 20px; height: 20px; text-align: center;
+    float: left;
+  }
+  #reload
+  {
+    margin-left: 20px;
+
+  }
+  #numerox{
+
+     float:left;
+     margin-right: 10px;
+
+
+  }
+  #limpiar{
+
+    margin-left: 3px;
+
+  }
