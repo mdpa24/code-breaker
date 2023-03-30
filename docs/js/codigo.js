@@ -44,6 +44,8 @@ function limpiarFormulario() {
 }
 const reload = document.getElementById('reload');
 
+
+
 reload.addEventListener('click', _ => { 
     location.reload();
 });
@@ -126,56 +128,56 @@ switch(asteriscos) {
     case 1: 
     switch(guiones) {
 
-        case 0: console.log(numerox+" *");
+        case 0: document.getElementById("resultado").innerHTML = numerox+" *" ;
         break;
-        case 1: console.log(numerox+" *-");
+        case 1: document.getElementById("resultado").innerHTML = numerox+" *-" ;
         break;
-        case 2: console.log(numerox+" *--");
+        case 2: document.getElementById("resultado").innerHTML = numerox+" *--" ;
         break;
-        case 3: console.log(numerox+" *---");
+        case 3: document.getElementById("resultado").innerHTML = numerox+" *---" ;
         break;
     }
     break;
     case 2: 
     switch(guiones) {
 
-        case 0: console.log(numerox+" **");
+        case 0: document.getElementById("resultado").innerHTML = numerox+" **" ;
         break; 
-        case 1: console.log(numerox+" **-");
+        case 1: document.getElementById("resultado").innerHTML = numerox+" **-" ;
         break;
-        case 2: console.log(numerox+" **--");
+        case 2: document.getElementById("resultado").innerHTML = numerox+" **--" ;
         break;
     }
     break;
     case 3: 
     switch(guiones) {
 
-        case 0: console.log(numerox+" ***");
+        case 0: document.getElementById("resultado").innerHTML = numerox+" ***" ;
         break; 
-        case 1: console.log(numerox+" ***-");
+        case 1: document.getElementById("resultado").innerHTML = numerox+" ***-" ;
         break;
     
     }
     break;
-    case 4: console.log(numerox+" **** Felicidades!! Adivinaste el número!! ");
+    case 4: document.getElementById("resultado").innerHTML = numerox+ " **** Felicidades!! Adivinaste el número!!" ;
     break;
     case 0:
         switch(guiones) {
 
-            case 1: console.log(numerox+" -");
+            case 1: document.getElementById("resultado").innerHTML = numerox+" -" ;
             break;
-            case 2: console.log(numerox+" --");
+            case 2: document.getElementById("resultado").innerHTML = numerox+" --" ;
             break;
-            case 3: console.log(numerox+" ---");
+            case 3: document.getElementById("resultado").innerHTML = numerox+" ---" ;
             break;
-            case 4: console.log(numerox+" -----");
+            case 4: document.getElementById("resultado").innerHTML = numerox+" -----" ;
             break;
-            case 0: console.log(numerox);
+            case 0: document.getElementById("resultado").innerHTML = numerox ;
             break;
         }
-
-     
-}
-
+      
+       
+}   
+       
 
 }

@@ -13,7 +13,7 @@
 </head>
 <body>
 <div id="contenedor">
-
+    <form id="formulario">
     <h1>Juego de adivinar un número secreto de cuatro dígitos</h1>
     <div id="display-numero">?</div>
     
@@ -22,11 +22,6 @@
     <div class="clearfix"></div>
    
 
-    <form id="formulario">
-
-
-    
-    
     </form>
     
     <button onclick="playGame()" id="jugar">Jugar</button>
@@ -37,13 +32,14 @@
     <button id="reload">Click para adivinar número diferente</button>  
 
     <p id="subtitulo">Pistas: </p>
-    <p class="pistas"> Este simbolo:&nbsp  - &nbsp  significa que hay un dígito en el número secreto pero fuera de su posición </p>
-    <p class="pistas"> Este simbolo:&nbsp *  &nbsp  significa que hay un dígito en en la posición correcta </p>
-    <p id="nota"> Nota: Los resultados se muestran en la Consola web (Ctrl+Shift+K) </p>
+    <p class="pistas"> Este simbolo:&nbsp  - &nbsp  significa que hay un dígito que pertence al número secreto pero que está fuera de su posición </p>
+    <p class="pistas"> Este simbolo:&nbsp *  &nbsp  significa que hay un dígito que pertenece al número secreto y que está en la posición correcta </p>
+    
 
 
 </div>
 
+    <p id="resultado"> </p>
 
    
 <script src="./js/codigo.js" charset="utf-8"></script>
