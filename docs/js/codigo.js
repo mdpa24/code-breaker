@@ -172,7 +172,7 @@ switch(asteriscos) {
             break;
             case 4: document.getElementById("resultado").innerHTML = numerox+" -----" ;
             break;
-            case 0: document.getElementById("resultado").innerHTML = numerox ;
+            case 0: document.getElementById("resultado").innerHTML = numerox;
             break;
         }
       
